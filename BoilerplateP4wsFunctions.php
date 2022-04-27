@@ -141,6 +141,8 @@ function h1($size=1,$content='Expandibles Images Project 01/50') {
     return (new Boilerplate("h$size",0,[],$content))->get();
 }
 
+#COMPONENTES
+
 /**div
  * Esta etiqueta 
  * es utilizada para 
@@ -148,6 +150,7 @@ function h1($size=1,$content='Expandibles Images Project 01/50') {
  * es una caja generica
  * sin sentido semantico
  */
+#imagenes expandibles
 function images() {
     return (new Boilerplate('div',0,[
         'class' => 'container'
@@ -170,7 +173,7 @@ function images() {
     ]
     ))->get();
 }
-
+//video juego
 function screens () {
 
     return implode('',[
@@ -183,6 +186,10 @@ function screens () {
     ]);
 
 }
+//hover effect on a board
+
+
+#FIN DEL BLOQUE COMPONENTES
 
 function doctype ($print = true) {
     $objeto = new Piezas4websitesClass;
