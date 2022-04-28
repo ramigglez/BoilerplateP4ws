@@ -44,7 +44,7 @@ $genesis = block([
 
         body([
 
-            h1(1,'Boilerplate. Hello World.'),
+            h1(1,'BoilerplateP4ws. Hello World.'),
 
             #/*Component Piece : "ExpandiblesImages"
                 images(),
