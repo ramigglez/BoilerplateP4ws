@@ -12,9 +12,13 @@ $genesis = block([
         head([
 
             meta_charset(),
+
             meta_viewport(),
+
             title('Piezas4WebSites'),
+
             _link(),
+            
             kvtag_('link',[
                 'rel' => 'icon',
                 'type' => 'image/png',
@@ -24,9 +28,13 @@ $genesis = block([
         ]),
 
         body([
+
             h1(1,'Boilerplate. Hello World.'),
+
             images(),
+
             main_script(),
+
             fa_script()
 
         ])
