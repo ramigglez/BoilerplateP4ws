@@ -25,7 +25,7 @@ $genesis = block([
 
         body([
             h1(1,'Boilerplate. Hello World.'),
-            #images(),
+            images(),
             main_script(),
             fa_script()
 

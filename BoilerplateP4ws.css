@@ -12,10 +12,10 @@ body {
     height: 100vh;
 }
 
-/*SECCION PARA LOS ESTILOS DEL PROYECTO 01 IMAGENES EXPANDIBLES
+/*SECCION PARA LOS ESTILOS DEL PROYECTO 01 IMAGENES EXPANDIBLES*/
 
     #img01 {
-        background-image: url('./imgs/image01.png');
+        background-image: url('./imgs/vista_general.png');
     }
 
     #img02 {
@@ -31,7 +31,7 @@ body {
     }
 
     #img05 {
-        background-image: url('./imgs/image02.png');
+        background-image: url('./imgs/vista_general.png');
     }
 
     .container {
@@ -77,4 +77,4 @@ body {
         }
     }
 
-FIN DE LA SECCION IMAGENES EXPANDIBLES*/
+/*FIN DE LA SECCION IMAGENES EXPANDIBLES*/

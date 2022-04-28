@@ -1,5 +1,5 @@
 /**
-     * Seccion para las funciones del proyecto imagenes expandibles
+     * Seccion para las funciones del proyecto imagenes expandibles*/
     
 
     const panels = document.querySelectorAll('.panel')
@@ -16,4 +16,4 @@
             panel.classList.remove('active')
         })
     }
-Fin del bloque */
+/*Fin del bloque */
