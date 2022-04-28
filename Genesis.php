@@ -26,8 +26,8 @@ $genesis = block([
                 'href' => './favicon/puzzle.png'
             ]),
 
-            #/*Component Piece
-                kvtag_('link',[ #ExpandiblesImages
+            #/*Component Piece : "ExpandiblesImages"
+                kvtag_('link',[ 
                     'rel' => 'stylesheet',
                     'href' => './Components/Expandibles_Images/ExpandiblesImages.css'
                 ])
@@ -39,12 +39,12 @@ $genesis = block([
 
             h1(1,'Boilerplate. Hello World.'),
 
-            #/*Component Piece
-                images(), #ExpandiblesImages
+            #/*Component Piece : "ExpandiblesImages"
+                images(),
             ###*/
 
-            #/*Component Piece
-                kvtag_('script',[ #ExpandiblesImages
+            #/*Component Piece : "ExpandiblesImages"
+                kvtag_('script',[
                     'src' => './Components/Expandibles_Images/ExpandiblesImages.js'
                 ]),
             ###*/
