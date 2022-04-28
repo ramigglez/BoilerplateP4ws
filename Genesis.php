@@ -2,6 +2,7 @@
 
 require_once './BoilerplateP4wsClasses.php';
 require_once './BoilerplateP4wsFunctions.php';
+require_once './Components/Expandibles_Images/ExpandiblesImages.php';
 
 $genesis = block([
 
@@ -18,12 +19,19 @@ $genesis = block([
             title('Piezas4WebSites'),
 
             _link(),
-            
+
             kvtag_('link',[
                 'rel' => 'icon',
                 'type' => 'image/png',
                 'href' => './favicon/puzzle.png'
-            ])
+            ]),
+
+            #/*Component Piece
+                kvtag_('link',[ #ExpandiblesImages
+                    'rel' => 'stylesheet',
+                    'href' => './Components/Expandibles_Images/ExpandiblesImages.css'
+                ])
+            ###*/
 
         ]),
 
@@ -31,7 +39,15 @@ $genesis = block([
 
             h1(1,'Boilerplate. Hello World.'),
 
-            images(),
+            #/*Component Piece
+                images(), #ExpandiblesImages
+            ###*/
+
+            #/*Component Piece
+                kvtag_('script',[ #ExpandiblesImages
+                    'src' => './Components/Expandibles_Images/ExpandiblesImages.js'
+                ]),
+            ###*/
 
             main_script(),
 
