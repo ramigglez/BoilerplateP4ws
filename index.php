@@ -5,7 +5,7 @@ require_once './BoilerplateP4wsFunctions.php';
 
 $genesis = block([
 
-    dt(),
+    doct(),
 
     html([
 

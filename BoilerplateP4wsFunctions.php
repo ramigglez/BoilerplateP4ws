@@ -5,7 +5,7 @@
  * que se coloca en primer lugar
  * en cualquier proyecto html
  */
-function dt() {
+function doct() {
     return (new Bplate('!DOCTYPE',1,['html']))->get();
 }
 
