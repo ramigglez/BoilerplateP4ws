@@ -77,13 +77,13 @@ class Block extends Boilerplate {
         $this->data = $this->__content($data);
     }
 
-    public function _get ($previous_hash = 'genesis') {
+    public function _get ($previous_hash_OR_block_name = 'genesis') {
 
         $nonce = 0;
 
         $data = [
             'html' => $this->data,
-            'previous' => $previous_hash
+            'previous' => $previous_hash_OR_block_name
         ];
 
         $this->data .= '  '.$nonce;
@@ -95,7 +95,7 @@ class Block extends Boilerplate {
             $this->data = implode('  ',$content);
             $data = [
                 'html' => $this->data,
-                'previous' => $previous_hash
+                'previous' => $previous_hash_OR_block_name
             ];
             $hash = hash('sha256',implode('',$data));
             $aux = substr($hash,0,2);
@@ -103,7 +103,7 @@ class Block extends Boilerplate {
 
         return json_encode([
             'hash' => $hash,
-            'previous' => $previous_hash,
+            'previous' => $previous_hash_OR_block_name,
             'data' => htmlspecialchars($this->data)
         ]);
     }

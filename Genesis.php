@@ -2,7 +2,14 @@
 
 require_once './BoilerplateP4wsClasses.php';
 require_once './BoilerplateP4wsFunctions.php';
-require_once './Components/Expandibles_Images/ExpandiblesImages.php';
+
+########################################################################-------COMPONENTS------------###
+
+    #/*Component Piece : "ExpandiblesImages"
+        require_once './Components/Expandibles_Images/ExpandiblesImages.php';
+    ###*/
+
+#-------COMPONENTS------------###
 
 $genesis = block([
 
