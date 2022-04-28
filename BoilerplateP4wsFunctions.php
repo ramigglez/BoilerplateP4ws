@@ -173,21 +173,6 @@ function images() {
     ]
     ))->get();
 }
-//video juego
-function screens () {
-
-    return implode('',[
-
-        (new Boilerplate('div',0,['class'=>'screen'],[
-            h1(1,'Catch The Insect'),
-            (new Boilerplate('button',0,['class'=>'btn','id'=>'start-btn'],'Play Game'))->get()
-        ]))->get()
-
-    ]);
-
-}
-//hover effect on a board
-
 
 #FIN DEL BLOQUE COMPONENTES
 
