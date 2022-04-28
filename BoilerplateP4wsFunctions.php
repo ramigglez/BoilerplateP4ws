@@ -128,8 +128,8 @@ function focuspocus($genesis,$block = 0) {
  * codigo html en un 
  * bloque con su hash
  */
-function block($data) {
-    return (new Block ($data))->_get();
+function block($blockData,$blockName = 'Genesis') {
+    return (new Block ($blockData))->_get($blockName);
 }
 
 /**h1

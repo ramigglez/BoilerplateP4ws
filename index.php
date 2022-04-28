@@ -33,6 +33,6 @@ $genesis = block([
 
     ])
 
-]);
+],'None');
 
-focuspocus($genesis);
+focuspocus($genesis,1);
