@@ -5,7 +5,7 @@ require_once './BoilerplateP4wsFunctions.php';
 
 ########################################################################-------COMPONENTS------------###
 
-    #/*Component Piece : "ExpandiblesImages"
+    /*Component Piece : "ExpandiblesImages"
         require_once './Components/Expandibles_Images/ExpandiblesImages.php';
     ###*/
 
@@ -46,11 +46,11 @@ $genesis = block([
 
             h1(1,'BoilerplateP4ws. Hello World.'),
 
-            #/*Component Piece : "ExpandiblesImages"
+            /*Component Piece : "ExpandiblesImages"
                 images(),
             ###*/
 
-            #/*Component Piece : "ExpandiblesImages"
+            /*Component Piece : "ExpandiblesImages"
                 kvtag_('script',[
                     'src' => './Components/Expandibles_Images/ExpandiblesImages.js'
                 ]),
