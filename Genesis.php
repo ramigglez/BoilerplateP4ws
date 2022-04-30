@@ -33,7 +33,7 @@ $genesis = block([
                 'href' => './favicon/puzzle.png'
             ]),
 
-            #/*Component Piece : "ExpandiblesImages"
+            /*Component Piece : "ExpandiblesImages"
                 kvtag_('link',[ 
                     'rel' => 'stylesheet',
                     'href' => './Components/Expandibles_Images/ExpandiblesImages.css'
