@@ -69,7 +69,7 @@ class Bplate extends Boilerplate {
 
 }
 
-class Block extends Boilerplate {
+class Block extends Bplate {
 
     protected $data = null;
 
@@ -173,5 +173,11 @@ class Piezas4websitesClass extends Block {
             echo "<script>alert('the keys are not valid.');</script>";
         }
     }
+
+}
+
+class _3bp extends Piezas4websitesClass {
+
+    #  --- @ CREATE --- @ YOUR --- @ OWN --- @ HELLO WORLD ---  #
 
 }

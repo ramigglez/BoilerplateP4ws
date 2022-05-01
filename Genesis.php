@@ -46,6 +46,18 @@ $genesis = block([
 
             h1(1,'BoilerplateP4ws. Hello World.'),
 
+            kvtag('a',[
+                'href' => 'http://boilerplatep4ws.lol/GENESIS'
+            ],'GENESIS'),
+
+            "<br><br>",
+
+            kvtag('a',[
+                'href' => 'https://github.com/ramigglez/BoilerplateP4ws'
+            ],'Version : {CURRENT.} (SOURCE CODE)'),
+
+            "<br><br>",
+
             #/*Component Piece : "ExpandiblesImages"
                 images(),
             ###*/
