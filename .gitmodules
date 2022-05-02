@@ -1,3 +1,6 @@
 [submodule "BoilerplateP4wsFunctions"]
 	path = BoilerplateP4wsFunctions
 	url = git@github.com:ramigglez/BoilerplateP4wsFunctions.git
+[submodule "BoilerplateP4wsFunctionsCurrent"]
+	path = BoilerplateP4wsFunctionsCurrent
+	url = https://github.com/ramigglez/BoilerplateP4wsFunctionsCurrent
