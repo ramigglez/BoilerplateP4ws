@@ -1,7 +1,7 @@
 <?php
 
 require_once './BoilerplateP4wsClasses.php';
-require_once './BoilerplateP4wsFunctions.php';
+require_once './BoilerplateP4wsFunctionsCurrent/BoilerplateP4wsFunctions.php';
 
 ########################################################################-------COMPONENTS------------###
 
@@ -76,8 +76,6 @@ $genesis = block([
 
     ])
 
-],'Piezas4WebSites -> RamiGGlez 00');
+],'Piezas4WebSites -> RamiGGlez 00 : GENESIS Block Number 0');
 
-$uno_igual_a_formato_json_cero_ejecuta_html = 0;
-
-focuspocus($genesis,$uno_igual_a_formato_json_cero_ejecuta_html);
+$uno_igual_a_formato_json_cero_ejecuta_html = 1;

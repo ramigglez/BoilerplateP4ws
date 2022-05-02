@@ -117,6 +117,8 @@ function focuspocus($genesis,$block = 0) {
         $html = explode('  ',$genesis->data);
 
         echo html_entity_decode($html[0]);
+    }else if($block === 1){
+        return $genesis;
     }else{
         echo $genesis;
     }

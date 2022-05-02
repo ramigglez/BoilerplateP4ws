@@ -180,4 +180,121 @@ class _3bp extends Piezas4websitesClass {
 
     #  --- @ CREATE --- @ YOUR --- @ OWN --- @ HELLO WORLD ---  #
 
+    private array|null $the_chain = null;
+
+    private function setGenesisBlock ($block) {
+        $this->the_chain[0] = json_decode($block);
+    }
+
+    public function __construct ($block = null) {
+        if($block != null) {
+            $this->setGenesisBlock($block);
+        }
+    }
+
+    private function getFirst () {
+        return $this->the_chain[0];
+    }
+
+    private function getLast () {
+        return $this->the_chain[count($this->the_chain)-1];
+    }
+
+    protected function mineSecondBlock ($block) {
+
+        $first = $this->getFirst();
+        $first_hash = $first->hash;
+
+        $block->previous = $first_hash;
+
+        $block->hash = hash('sha256',implode('',[
+            $first_hash
+        ]));
+
+        $nonce = 0;
+
+        $block->hash .= '  '.$nonce;
+
+        do {
+            $content = explode('  ',$block->hash);
+            $nonce++;
+            $content[1] = $nonce;
+            $block->hash = implode('  ',$content);
+            $data = [
+                'valid_hash' => $block->hash
+            ];
+            $hash = hash('sha256',implode('',$data));
+            $aux = substr($hash,0,2);
+        } while ($aux !== '00');
+
+        $block->hash = $hash;
+
+        /*
+            echo "<pre>";
+            var_dump(json_decode(json_encode($block)));return;
+        */
+        $this->the_chain[1] = (array)$block;
+
+    }
+
+    private function keep_mining ($list) {
+
+        for ($i = 1; $i < count($list); $i++) {
+
+            $previous = $this->getLast();
+
+            $previous_hash = $previous['hash'];
+
+            $list[$i] = json_decode($list[$i]);
+
+            $list[$i]->previous = $previous_hash;
+
+            $list[$i]->hash = hash('sha256',implode('',[
+                $previous_hash
+            ]));
+
+            $nonce = 0;
+
+            $list[$i]->hash .= '  '.$nonce;
+
+            do {
+                $content = explode('  ',$list[$i]->hash);
+                $nonce++;
+                $content[1] = $nonce;
+                $list[$i]->hash = implode('  ',$content);
+                $data = [
+                    'valid_hash' => $list[$i]->hash
+                ];
+                $hash = hash('sha256',implode('',$data));
+                $aux = substr($hash,0,2);
+            } while ($aux !== '00');
+    
+            $list[$i]->hash = $hash;
+
+            $this->the_chain[] = (array)$list[$i];
+
+        }
+
+    }
+
+    public function minarListDeBlocks ($blockList = null) {
+
+        if($blockList === null) {
+            return $this->chain();
+        } else {
+
+            $this->mineSecondBlock (json_decode($blockList[0]));
+
+            $this->keep_mining ($blockList);
+
+            return $this->chain();
+
+        }
+
+    }
+
+    public function chain () {
+        return json_encode($this->the_chain);
+    }
+
 }
