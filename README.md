@@ -16,5 +16,5 @@
     <li>Cambiar la ruta del require_ones del componente perse</li>
     <li>renombrar la variable $genesis</li>
     <li>agregar el nuevo bloque al index del proyecto principal con require_ones</li>
-    <li>agregar la variable del bloque genesis del nuevo proyecto y agregarla a la lista de bloques para minar</li>
+    <li>agregar la variable del bloque genesis del nuevo proyecto a la lista de bloques para minar</li>
 </ol>
