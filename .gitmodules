@@ -4,3 +4,6 @@
 [submodule "BoilerplateP4wsFunctionsCurrent"]
 	path = BoilerplateP4wsFunctionsCurrent
 	url = https://github.com/ramigglez/BoilerplateP4wsFunctionsCurrent
+[submodule "Components/TodoList"]
+	path = Components/TodoList
+	url = https://github.com/ramigglez/TodoList.git

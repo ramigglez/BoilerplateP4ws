@@ -287,8 +287,6 @@ class _3bp extends Piezas4websitesClass {
 
             $this->keep_mining ($blockList);
 
-            return $this->chain();
-
         }
 
     }

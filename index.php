@@ -1,13 +1,14 @@
 <?php 
 
 require_once './Genesis.php'; 
-
-    //theBlock($genesis);
+require_once './Components/TodoList/Genesis.php';
 
     $MyBlockChain = genesis($genesis);
 
+    $MyBlockChain->minarListDeBlocks([
+        $todos
+    ]);
+
     showChain($MyBlockChain);
-
-
 
 ?>
