@@ -13,7 +13,7 @@
     de los submodulos del componente.</li>
     <li>Abrir el archivo Genesis.php del nuevo bloque</li>
     <li>Comentar las lineas 3 y 4 (los require_ones)</li>
-    <li>Cambiar la ruta del require_ones del componente perse</li>
+    <li>Cambiar la ruta del require_ones del componente perse y de su js y css</li>
     <li>renombrar la variable $genesis</li>
     <li>agregar el nuevo bloque al index del proyecto principal con require_ones</li>
     <li>agregar la variable del bloque genesis del nuevo proyecto a la lista de bloques para minar</li>
